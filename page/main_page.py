@@ -13,7 +13,7 @@ from page.base_page import BasePage
 
 
 class MainPage(BasePage):
-    base_url = "https://work.weixin.qq.com/wework_admin/frame"
+    base_url = "https://work.weixin.qq.com/wework_admin/frame/#index"
     #添加成员
     def goto_add_members(self):
         sleep(3)
@@ -26,3 +26,5 @@ class MainPage(BasePage):
         #点击【通讯录】
         self.driver.find_element(By.ID,'menu_contacts').click()
         return AddPage(self.driver)
+
+
